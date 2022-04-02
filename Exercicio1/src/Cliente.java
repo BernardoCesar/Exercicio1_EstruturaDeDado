@@ -27,7 +27,7 @@ public class Cliente {
 	public void sacar(double valor) {
 		
 		if(saldo<valor) {
-			showMessageDialog(null, "Saldo insuficiente para operação");
+			showMessageDialog(null, "Saldo insuficiente para operaÃ§Ã£o");
 		}else {
 			saldo=saldo-valor;
 		}

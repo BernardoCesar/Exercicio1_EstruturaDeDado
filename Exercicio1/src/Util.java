@@ -6,11 +6,11 @@ public class Util {
 	static Lista<Cliente> clientes= new Lista<Cliente>();
 	
 	public static String menu() {
-		String aux = "Escolha uma opÁ„o:\n";
+		String aux = "Escolha uma op√ß√£o:\n";
 		aux += "1.Abrir conta\n";
 		aux += "2.Realizar saque \n";
-		aux += "3.Realizar depÛsito \n";
-		aux += "4.RelatÛrio de contas \n";
+		aux += "3.Realizar dep√≥sito \n";
+		aux += "4.Relat√≥rio de contas \n";
 		aux += "5.Encerrar conta \n";
 		aux += "6.Finalizar";
 		return aux;
@@ -26,7 +26,7 @@ public class Util {
 		Cliente cliente= new Cliente(nome, cpf);
 		
 			if(clientes.pesquisar(cliente)!=null) {
-				showMessageDialog(null, "Este CPF j· est· cadastrado.");
+				showMessageDialog(null, "Este CPF j√° est√° cadastrado.");
 				
 			}else {
 				clientes.inserir(cliente);
@@ -45,7 +45,7 @@ public class Util {
 			valor=Double.parseDouble(showInputDialog("Insira o valor do saque: "));
 			aux.dado.sacar(valor);
 		}else {
-			showMessageDialog(null, "CPF n„o encontrado.");
+			showMessageDialog(null, "CPF n√£o encontrado.");
 		}
 		
 
@@ -60,10 +60,10 @@ public class Util {
 		
 		if(clientes.pesquisar(cliente)!=null) {	
 			aux=clientes.pesquisar(cliente);
-			valor=Double.parseDouble(showInputDialog("Insira o valor do depÛsito: "));
+			valor=Double.parseDouble(showInputDialog("Insira o valor do dep√≥sito: "));
 			aux.dado.depositar(valor);
 		}else {
-			showMessageDialog(null, "CPF n„o encontrado.");
+			showMessageDialog(null, "CPF n√£o encontrado.");
 		}
 		
 	}
@@ -88,7 +88,7 @@ public class Util {
 			clientes.remover(cliente);
 			showMessageDialog(null, "Conta encerrada com sucesso");
 		}else {
-			showMessageDialog(null, "CPF n„o encontrado.");
+			showMessageDialog(null, "CPF n√£o encontrado.");
 		}
 	}
 	

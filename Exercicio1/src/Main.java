@@ -10,7 +10,7 @@ public class Main {
 			opcao= parseInt(showInputDialog(Util.menu()));
 			
 			if(opcao < 1 || opcao > 6) {
-				showMessageDialog(null, "OpÁ„o inv·lida!");
+				showMessageDialog(null, "Op√ß√£o inv√°lida!");
 			}else {
 				switch (opcao) {
 				case 1:
